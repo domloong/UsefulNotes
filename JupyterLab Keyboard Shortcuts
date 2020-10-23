@@ -1,0 +1,20 @@
+{    "shortcuts": [
+      {
+            "command": "runmenu:run-all",
+            "keys": ["Ctrl L"],
+            "selector": "[data-jp-kernel-user]:focus"
+        },
+    
+        {
+            "command": "notebook:clear-all-cell-outputs",
+            "keys": ["O", "O"],
+            "selector": "[data-jp-kernel-user]:focus"
+        },
+    
+        {
+            "command": "notebook:clear-cell-output",
+            "keys": ["C", "C"],
+            "selector": "[data-jp-kernel-user]:focus"
+        },
+    ]
+}
