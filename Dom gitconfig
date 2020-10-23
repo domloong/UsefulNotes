@@ -1,0 +1,29 @@
+[user]
+	name = Dom Loong
+	email = dominicloong@geotab.com
+[core]
+	fscache = true
+	preloadindex = true
+	filemode = false
+	ignorecase = false
+[push]
+	default = current
+[pull]
+	rebase = true
+[merge]
+	ff = false
+	defaultToUpstream = true
+[remote "origin"]
+	prune = true
+[submodule]
+	recurse = true
+[alias]
+	co = checkout
+	ff = pull --no-rebase --ff
+	fb = !git rev-parse --abbrev-ref HEAD | grep -o \"[0-9]*\" | xargs -I {} python -mwebbrowser https://checkmate.fogbugz.com/f/cases/{}
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	st = status
+  ca = commit -a -m
+	rn = log --decorate --oneline --merges
+[credential]
+	helper = manager
