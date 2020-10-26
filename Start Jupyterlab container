@@ -1,3 +1,3 @@
-docker build -t jupyter:jupyterlab -f. .\jupyterlab_dockerfile2 .
+docker build -t jupyter:jupyterlab -f .\jupyterlab_dockerfile2 .
 
 docker run --restart=always --name=jupyterlab_container -p 9999:8888 -e "PROJECT_ID=geotab-embedded" -v "C:/GitRepos/Notebooks:/home/jovyan/notebooks/" -v "C:/Users/dominicloong/AppData/Roaming/gcloud:/home/jovyan/.config/" jupyter:jupyterlab
