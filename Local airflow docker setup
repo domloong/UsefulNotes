@@ -1,0 +1,1 @@
+docker run -d -p 8080:8080 -v C:/GitRepos/firmware-sign-off/airflow_portal/dags:/usr/local/airflow/dags puckel/docker-airflow webserver
