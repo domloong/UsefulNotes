@@ -1,0 +1,9 @@
+Client Class: https://googleapis.dev/python/bigquery/latest/generated/google.cloud.bigquery.client.Client.html#google.cloud.bigquery.client.Client
+
+get_dataset
+get_table
+create_table
+insert_rows_from_dataframe
+query
+
+
