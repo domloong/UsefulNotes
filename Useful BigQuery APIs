@@ -6,4 +6,5 @@ create_table
 insert_rows_from_dataframe
 query
 
+dataset.table()
 
