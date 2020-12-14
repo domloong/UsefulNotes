@@ -8,3 +8,13 @@ query
 
 dataset.table()
 
+update_table
+
+client.query()
+
+bigquery.QueryJobConfig
+
+load_table_from_dataframe
+
+
+
