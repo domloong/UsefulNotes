@@ -1,0 +1,20 @@
+# This is a customized docker image built from Jupyter Project
+
+FROM jupyter/datascience-notebook
+
+USER root
+
+RUN apt-get update && apt-get install --no-install-recommends -y apt-utils gnupg
+
+# Install Google Cloud SDK
+RUN echo "deb http://packages.cloud.google.com/apt cloud-sdk main" | tee -a /etc/apt/sources.list.d/google-cloud-sdk.list && \
+    curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - && \
+    apt-get update -y && \
+    apt-get install google-cloud-sdk -y 
+     
+RUN pip install google-cloud-bigquery
+RUN pip install google-api-python-client
+RUN jupyter serverextension enable --py jupyterlab
+RUN pip install pyarrow
+
+ENTRYPOINT ["jupyter", "lab","--ip=0.0.0.0","--allow-root"]
