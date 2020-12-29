@@ -1,3 +1,18 @@
 docker build -t jupyter:jupyterlab -f .\jupyterlab_dockerfile2 .
 
 docker run --restart=always --name=jupyterlab_container -p 9999:8888 -e "PROJECT_ID=geotab-embedded" -v "C:/GitRepos/Notebooks:/home/jovyan/notebooks/" -v "C:/Users/dominicloong/AppData/Roaming/gcloud:/home/jovyan/.config/" jupyter:jupyterlab
+
+
+Linux
+
+sudo docker build -t jupyterlab:v1 -f JupyterLab .
+
+sudo docker run --restart=always -p 8888:8888 -v "/home/dominicloong_geotab_com/GitRepos/Notebooks":"/home/jovyan/Notebooks" jupyterlab:v1
+
+Run "gcloud auth application-default login" to login
+
+Set your environmental variable
+
+import os 
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/jovyan/.config/gcloud/application_default_credentials.json'
+
