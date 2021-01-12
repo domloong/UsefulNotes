@@ -1,0 +1,4 @@
+docker run:
+  arguments:
+  
+    --rm: remove container after exit
