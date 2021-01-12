@@ -2,3 +2,6 @@ docker run:
   arguments:
   
     --rm: remove container after exit
+    sleep 5 (Sleep for 5 secs then exits)
+    bash (opens bash session)
+      -c run bash commands 
