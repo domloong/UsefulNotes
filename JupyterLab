@@ -22,5 +22,6 @@ RUN jupyter serverextension enable --py jupyterlab
 RUN pip install pyarrow
 RUN pip install --upgrade python-gitlab
 RUN pip install oauth2client
+RUN pip install google-cloud-bigquery-storage
 
 ENTRYPOINT ["jupyter", "lab","--ip=0.0.0.0","--allow-root"]
