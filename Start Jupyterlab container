@@ -9,6 +9,8 @@ sudo docker build -t jupyterlab:v1 -f JupyterLab .
 
 sudo docker run --restart=always -p 8888:8888 -v "/home/dominicloong/GitRepos/Notebooks":"/home/jovyan/Notebooks" jupyterlab:v1
 
+sudo docker run -p 8888:8888 -v "/home/dominicloong/GitRepos/Notebooks":"/home/jovyan/Notebooks" jupyterlab:v4
+
 Run "gcloud auth application-default login" to login
 
 Set your environmental variable
