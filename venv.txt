@@ -1,0 +1,14 @@
+https://docs.python.org/3/tutorial/venv.html
+
+Create venv directory with:
+
+    python3 -m venv [name of directory]
+
+
+To activate:
+
+    source [name of directory]/bin/activate
+
+
+To deactivate:
+    deactivate
