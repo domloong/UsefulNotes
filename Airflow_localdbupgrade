@@ -1,0 +1,9 @@
+Follow steps to switch to mysql backend
+
+https://airflow.apache.org/docs/apache-airflow/stable/howto/set-up-database.html#setting-up-a-mysql-database
+
+Change to local executor and sql alchemist connection in airflow.QueryJobConfig
+
+run airflow db upgrade
+
+and then also airflow create user to make new users to login
