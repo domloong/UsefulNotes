@@ -1,0 +1,13 @@
+Set your own python version!
+
+installed pyenv
+
+Set shims in front of your path
+
+Set zshrc to init virtualenv
+
+create your virtual env and activate/deactivate them as needed
+
+https://github.com/pyenv/pyenv
+
+https://github.com/pyenv/pyenv-virtualenv
